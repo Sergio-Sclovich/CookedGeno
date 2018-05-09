@@ -1,6 +1,0 @@
-Installing instructions
-
-1)download CookedGeno.zip from 
-2)set your working directory where you download *.zip: setwd("path_to_where_you_download") 
-3)load devtools: library("devtools")
-4)install CookedGeno: install("CookedGeno")
