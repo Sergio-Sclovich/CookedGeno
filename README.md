@@ -1,5 +1,5 @@
 # CookedGeno
-Tools for AFLP analysis parametrization with \href{https://sourceforge.net/projects/rawgeno/}{RawGeno} and quick plotting with Scatterplot3d
+Tools for AFLP analysis parametrization with RawGeno (https://sourceforge.net/projects/rawgeno/) and quick plotting with Scatterplot3d (https://github.com/cran/scatterplot3d)
 
 Installing instructions
 
