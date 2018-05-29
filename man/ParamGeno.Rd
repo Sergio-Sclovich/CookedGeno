@@ -4,7 +4,7 @@
 \alias{ParamGeno}
 \title{ParamGeno}
 \usage{
-ParamGeno(AFLP, case)
+ParamGeno(AFLP, case, who = who, keep = keep, thresh = thresh)
 }
 \arguments{
 \item{AFLP:}{An AFLP object from Package RawGeno}
@@ -35,7 +35,7 @@ It requiers RawGeno to be running and the AFLP data already loaded.
 }
 \examples{
 #Load data into RawGeno
-          ParamGeno(AFLP,c(100,500))
+          ParamGeno(AFLP,c(100,400))
 
 }
 \references{
