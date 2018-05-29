@@ -25,13 +25,13 @@
 #'              case = c(100,250).
 #'
 #' @examples #Load data into RawGeno
-#'           ParamGeno(AFLP,c(100,500))
+#'           ParamGeno(AFLP,c(100,400))
 #'
 #' @importFrom Rdpack reprompt
 #' @references \insertAllCited{}
 
 #Individual parameter evaluation
-ParamGeno<-function(AFLP,case)
+ParamGeno<-function(AFLP,case, who = who, keep = keep, thresh = thresh)
 {
   MaxW=seq(from = 1.5, to = 2, length.out = 6)
   MinW=seq(from = 1, to = 1.5, length.out = 6)
@@ -46,7 +46,7 @@ ParamGeno<-function(AFLP,case)
     for(j in MinW){
       for(k in RFU){
         EXTRACTAFLP(all.dat=AFLP$all.dat,samples.names=AFLP$samples.names, MAXBIN=i,
-                    MINBIN=j,RMIN=limitinf,RMAX=limitsup, cutRFU=k, who='_R', thresh=80, keep = F)
+                    MINBIN=j,RMIN=limitinf,RMAX=limitsup, cutRFU=k, who = who, thresh = thresh, keep = keep)
         output<-rbind(output,c(i,j,limitinf,limitsup,k,data.binary$table.stats[7,1],data.binary$table.stats[2,1]))
       }#for RFU
     }#for MinW
